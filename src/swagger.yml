@@ -132,3 +132,25 @@ paths:
       responses:
         200:
           description: Successfully deleted a person from people list
+
+  /synonym/{phase}:
+    get:
+      operationId: synonym.get_one_random
+      tags:
+        - Synonym
+      summary: Get one random synonym from a given phase
+      description: Get one random synonym
+      parameters:
+        - name: word_list
+          in: path
+          description:  A phase composed by a list of words to query from
+          type: array
+          required: True
+      responses:
+        200:
+          description: Successfully get one random synonym from given phase
+          schema:
+            properties:
+              synonym:
+                type: string
+
