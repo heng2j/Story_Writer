@@ -48,13 +48,24 @@ def get_synonyms_from_datamuse(word_list, max_num=20 , min_interpreting_score=25
     return [ word_item['word'] for word_item in response.json() if word_item['score'] > min_interpreting_score]
 
 
-def get_one_random(word_list):
+def get_one_random(input_phase):
 
     """
     :param word_list: A list of string to query the datamuse Means like(ml) endpoint for synonyms
     :return: A random choice from the synonyms that returned from get_synonyms_from_datamuse
     """
 
+    word_list = input_phase.split('+')
+
     synonyms = get_synonyms_from_datamuse(word_list, max_num=20)
 
-    return random.choice(synonyms)
+    if (len(synonyms) == 0):
+
+        abort(
+            404, "Synonyms can not be found with the given phase: {input_phase}".format(input_phase=input_phase)
+        )
+
+
+    result = {"synonym": random.choice(synonyms) }
+
+    return result
