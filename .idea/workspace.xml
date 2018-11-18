@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/people.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/swagger.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/synonym.py" />
-    </list>
+    <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
