@@ -9,13 +9,8 @@
 # System modules
 
 # 3rd party modules
-import pytest
-from werkzeug.exceptions import HTTPException
-import requests
-from flask import make_response, abort
 
-# Testing modules
-import src
+# Internal modules
 from src.rhymed import get_rhymed_list , get_pronunciations, extract_rhyme_phoneme
 
 

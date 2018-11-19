@@ -22,7 +22,7 @@ from config import db, ma
 
 
 class Word(db.Model):
-    __tablename__ = "word"
+    __tablename__ = "words"
     word_id = db.Column(db.Integer, primary_key=True)
     word = db.Column(db.String(32))
     pronunciation = db.Column(db.String(32))
@@ -35,4 +35,23 @@ class Word(db.Model):
 class WordSchema(ma.ModelSchema):
     class Meta:
         model = Word
+        sqla_session = db.session
+
+
+class Song(db.Model):
+    __tablename__ = "songs"
+    song_id = db.Column(db.Integer, primary_key=True)
+    song = db.Column(db.String(32))
+    year = db.Column(db.Integer)
+    artist = db.Column(db.String(128))
+    genre = db.Column(db.String(32))
+    lyrics = db.Column(db.Text()) # text
+    timestamp = db.Column(
+        db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
+    )
+
+
+class SongSchema(ma.ModelSchema):
+    class Meta:
+        model = Song
         sqla_session = db.session

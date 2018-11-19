@@ -58,4 +58,39 @@ paths:
                   type: string
 
 
+  /songs/{given_word}:
+    get:
+      operationId: songs.get_top_sample_lyrics
+      tags:
+        - Songs
+      summary: Get a list of song objects which lyrics contained the given word
+      description: Get a list of song objects which lyrics contained the given word
+      parameters:
+        - name: given_word
+          in: path
+          description:  A single English word
+          type: string
+          required: True
+      responses:
+        200:
+          description: Successfully get a list of song objects which lyrics contained the given word
+          schema:
+            type: array
+            items:
+              properties:
+                artist:
+                  type: string
+                year:
+                  type: integer
+                song:
+                  type: string
+                timestamp:
+                  type: string
+                genre:
+                  type: string
+                lyrics:
+                  type: string
+
+
+
 

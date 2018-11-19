@@ -19,8 +19,10 @@ import os
 import re
 from config import db
 
-# 3rd party modules
-from models import Word
+# Internal modules
+from src.rhymed import extract_rhyme_phoneme
+
+
 
 
 
@@ -58,27 +60,6 @@ def parse_data_set(data_set_path):
 
     return pronunciations_list
 
-
-def save_data_to_database(pronunciations_list):
-    """
-
-    :param pronunciations_list:
-    :return:
-    """
-
-    # Delete database file if it exists currently
-    if os.path.exists("word.db"):
-        os.remove("word.db")
-
-    # Create the database
-    db.create_all()
-
-    # iterate over the PEOPLE structure and populate the database
-    for word in pronunciations_list:
-        p = Word(word=word[0], pronunciation=word[1], phoneme=word[2])
-        db.session.add(p)
-
-    db.session.commit()
 
 
 
