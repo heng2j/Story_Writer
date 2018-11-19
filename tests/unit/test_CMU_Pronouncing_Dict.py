@@ -13,7 +13,7 @@ from os.path import dirname as up
 # 3rd party modules
 
 # Testing modules
-from src.data_tools.CMU_Pronouncing_Dict import parse_data_set
+from data_tools.CMU_Pronouncing_Dict import parse_data_set
 
 projectPath = os.getcwd()
 

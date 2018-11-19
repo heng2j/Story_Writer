@@ -11,7 +11,7 @@
 # 3rd party modules
 
 # Internal modules
-from src.rhymed import get_pronunciations, extract_rhyme_phoneme
+from rhymed import get_pronunciations, extract_rhyme_phoneme
 
 
 

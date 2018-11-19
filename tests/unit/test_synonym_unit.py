@@ -11,7 +11,7 @@
 # 3rd party modules
 
 # Testing modules
-from src.synonym import get_one_random, get_synonyms_from_datamuse
+from synonym import get_one_random, get_synonyms_from_datamuse
 
 
 def test_get_synonyms_from_datamuse():

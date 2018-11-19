@@ -4,3 +4,7 @@ connexion[swagger-ui]
 pytest==4.0.0
 nose==1.3.7
 pandas==0.23.4
+Flask-SQLAlchemy
+flask-marshmallow
+marshmallow-sqlalchemy
+marshmallow

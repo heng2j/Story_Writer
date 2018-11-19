@@ -17,7 +17,7 @@ on the CMU Pronouncing Dictionary data set
 
 
 # Internal modules
-from src.rhymed import extract_rhyme_phoneme
+from rhymed import extract_rhyme_phoneme
 
 
 def parse_data_set(data_set_path):
