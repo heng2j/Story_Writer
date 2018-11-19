@@ -13,14 +13,16 @@ songs collection
 """
 
 # System modules
+from datetime import datetime
 
 # 3rd party modules
 from flask import make_response, abort
-from sqlalchemy import and_
+from sqlalchemy import and_ , update
 
 # Internal modules
 from models import Song,SongSchema
 from config import db
+import src.helper_functions  as helper_functions
 
 
 def get_one_song(artist,song_title):
@@ -145,15 +147,16 @@ def update_song(song):
     # Did we find a song?
     if existing_song is not None:
 
+        existing_song.song = song['song']
+        existing_song.artist = song['artist']
+        existing_song.lyrics = song['lyrics']
+        existing_song.year = helper_functions.get_timestamp_year()
+        existing_song.timestamp = datetime.now()
+
         # turn the passed in song into a db object
         schema = SongSchema()
-        update = schema.load(song, session=db.session).data
 
-        # Set the id to the song we want to update
-        update.id = existing_song.song_id
-
-        # merge the new object into the old and commit it to the db
-        db.session.merge(update)
+        # Commit new updates
         db.session.commit()
 
         # return updated song in the response
@@ -180,11 +183,8 @@ def create_update_song(song):
     song_title = song['song']
     artist = song['artist']
 
-    existing_song = (
-        Song.query.filter(Song.song == song_title)
-            .filter(Song.artist == artist)
-            .one_or_none()
-    )
+    existing_song = Song.query.filter(Song.song == song_title).filter(Song.artist == artist).one_or_none()
+
 
     # Is this song already exist?
     if existing_song is None:
@@ -207,15 +207,16 @@ def create_update_song(song):
 
         print("existing_song: ", existing_song)
 
+        existing_song.song = song['song']
+        existing_song.artist = song['artist']
+        existing_song.lyrics = song['lyrics']
+        existing_song.year = helper_functions.get_timestamp_year()
+        existing_song.timestamp = datetime.now()
+
         # turn the passed in song into a db object
         schema = SongSchema()
-        update = schema.load(song, session=db.session).data
 
-        # Set the id to the song we want to update
-        update.id = existing_song.song_id
-
-        # merge the new object into the old and commit it to the db
-        db.session.merge(update)
+        # Commit new updates
         db.session.commit()
 
         # return updated song in the response

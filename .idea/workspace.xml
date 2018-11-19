@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/helper_functions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/css/medium-editor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/css/themes/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/medium-editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/Exploratory Data Analysis on MetroLyrics Data Set-checkpoint.ipynb" afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/Exploratory Data Analysis on MetroLyrics Data Set-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/Exploratory Data Analysis on MetroLyrics Data Set.ipynb" afterPath="$PROJECT_DIR$/notebook/Exploratory Data Analysis on MetroLyrics Data Set.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rhymed.py" afterPath="$PROJECT_DIR$/src/rhymed.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.py" afterPath="$PROJECT_DIR$/src/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/songs.py" afterPath="$PROJECT_DIR$/src/songs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/swagger.yml" afterPath="$PROJECT_DIR$/src/swagger.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home.html" afterPath="$PROJECT_DIR$/src/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,11 +49,21 @@
       <file leaf-file-name="songs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/songs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="248" column="0" lean-forward="true" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="174" column="22" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="22" />
               <folding>
-                <element signature="e#263#301#0" expanded="true" />
+                <element signature="e#242#271#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helper_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +71,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="370">
+              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="e#259#288#0" expanded="true" />
               </folding>
@@ -83,23 +80,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swagger.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="swagger.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/swagger.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
+            <state relative-caret-position="-255">
               <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_songs_unit.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_songs_unit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/test_songs_unit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state relative-caret-position="3872">
+              <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
               <folding>
-                <element signature="e#178#312#0" expanded="true" />
+                <element signature="e#178#325#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,8 +105,8 @@
       <file leaf-file-name="rhymed.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rhymed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="24" />
+            <state relative-caret-position="-2">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="e#266#304#0" expanded="true" />
               </folding>
@@ -131,6 +128,7 @@
       <find>lname</find>
       <find>god</find>
       <find>person</find>
+      <find>helper_functions</find>
       <find>Easter</find>
     </findStrings>
   </component>
@@ -273,23 +271,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Nosetests in test_songs_unit.py">
-    <configuration name="CMU_Pronouncing_Dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data_tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Story_Writer" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,20 +333,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="helper_functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Story_Writer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/helper_functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.CMU_Pronouncing_Dict" />
-      <item index="2" class="java.lang.String" itemvalue="Python.build_database" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in test_songs_unit.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.build_database" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test_songs_unit.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.helper_functions" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_songs_unit.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.build_database" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.CMU_Pronouncing_Dict" />
+        <item index="1" class="java.lang.String" itemvalue="Python.helper_functions" />
+        <item index="2" class="java.lang.String" itemvalue="Python.build_database" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
       </list>
     </recent_temporary>
   </component>
@@ -383,34 +381,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 40m 07s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 51m 15s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 40m 29s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 56m 14s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 40m 38s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 59m 03s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 42m 47s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 59m 58s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 44m 25s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 00m 33s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 44m 32s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 01m 23s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 46m 17s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 02m 26s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 46m 22s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 02m 35s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 47m 12s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 03m 50s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 10h 47m 38s.xml">
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 03m 55s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -422,7 +420,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3234391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3234391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -786,59 +784,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rhymed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="-2">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="e#266#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swagger.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
+        <state relative-caret-position="370">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="13" />
           <folding>
             <element signature="e#259#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Enviroments/python-virtual-environments/env/lib/python3.6/site-packages/itsdangerous/timed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/songs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="248" column="0" lean-forward="true" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="174" column="22" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="22" />
           <folding>
-            <element signature="e#263#301#0" expanded="true" />
+            <element signature="e#242#271#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/test_songs_unit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+        <state relative-caret-position="3872">
+          <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
           <folding>
-            <element signature="e#178#312#0" expanded="true" />
+            <element signature="e#178#325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swagger.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
