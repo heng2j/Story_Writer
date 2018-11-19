@@ -33,6 +33,7 @@ paths:
             properties:
               synonym:
                 type: string
+                description: One random synonym from given phase
 
   /rhymed/{given_word}:
     get:
@@ -56,6 +57,51 @@ paths:
               properties:
                 word:
                   type: string
+                  description:  A English words that rhymed with the given word
+
+  /songs:
+    get:
+      operationId: songs.get_one_song
+      tags:
+        - Songs
+      summary: Get a song objects with the given artist name and song title
+      description: Get a song objects with the given artist name and song title
+      parameters:
+        - name: artist
+          in: query
+          description:  A artist name
+          type: string
+          required: True
+        - name: song_title
+          in: query
+          description:  A song title
+          type: string
+          required: True
+      responses:
+        200:
+          description: Successfully get a song objects with the given artist name and song title
+          schema:
+            type: object
+            properties:
+              artist:
+                type: string
+                description: Artist name
+              year:
+                type: integer
+                description: Song released year
+              song:
+                type: string
+                description: Song title
+              timestamp:
+                type: string
+                description: Song creation/update timestamp
+              genre:
+                type: string
+                description: Song genre
+              lyrics:
+                type: string
+                description: Song lyrics
+
 
 
   /songs/{given_word}:
@@ -80,13 +126,20 @@ paths:
               properties:
                 artist:
                   type: string
+                  description: Artist name
                 year:
                   type: integer
+                  description: Song released year
                 song:
                   type: string
+                  description: Song title
                 timestamp:
                   type: string
+                  description: Song creation/update timestamp
                 genre:
                   type: string
+                  description: Song genre
                 lyrics:
                   type: string
+                  description: Song lyrics
+

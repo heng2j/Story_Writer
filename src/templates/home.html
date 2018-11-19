@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Application Home Page</title>
+    <title>Story Writer Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="static/css/home.css">
+    <!--<link rel="stylesheet" href="static/css/medium-editor.css">-->
+    <!--<link rel="stylesheet" href="static/css/themes/default.css">-->
+    <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -12,8 +16,15 @@
     </script>
 </head>
 <body>
+
+
+
     <div class="container">
-        <h1 class="banner">People Demo Application</h1>
+        <h1 class="banner">Story Writer Demo Application</h1>
+
+            <div class="editable"></div>
+            <script>var editor = new MediumEditor('.editable');</script>
+
         <div class="section editor">
             <label for="fname">First Name
                 <input id="fname" type="text" />
@@ -47,4 +58,5 @@
     </div>
 </body>
 <script src="static/js/home.js"></script>
+<!--<script src="static/js/medium-editor.js"></script>-->
 </html>

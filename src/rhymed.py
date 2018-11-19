@@ -85,7 +85,7 @@ def get_rhymed_list(given_word, limits=100):
     print("rhyme_phoneme_list: ", rhyme_phoneme_list)
 
     # Get the word requested with limit 100 by default
-    words = db.session.query(Word.word).filter(and_(Word.phoneme.in_(rhyme_phoneme_list) ,Word.word!=given_word )).distinct().limit(limits).all()
+    words = db.session.query(Word.word).filter(and_(Word.phoneme.in_(rhyme_phoneme_list),Word.word!=given_word )).distinct().limit(limits).all()
 
 
     # Did we find a the word?
