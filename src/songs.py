@@ -22,7 +22,8 @@ from sqlalchemy import and_ , update
 # Internal modules
 from models import Song,SongSchema
 from config import db
-import src.helper_functions  as helper_functions
+
+import helper_functions
 
 
 def get_one_song(artist,song_title):
@@ -43,6 +44,27 @@ def get_one_song(artist,song_title):
         abort(
             404,
             "Song title {song_title} is not found for artist: {artist} ".format(artist=artist,song_title=song_title),
+        )
+        return None
+
+def get_one_song_by_id(song_id):
+
+    # Get the song requested
+    song = Song.query.filter(Song.song_id == song_id ).one_or_none()
+
+    # Did we find a song?
+    if song is not None:
+
+        # Serialize the data for the response
+        song_schema = SongSchema()
+        data = song_schema.dump(song).data
+        return data
+
+    # Otherwise, nope, didn't find that song
+    else:
+        abort(
+            404,
+            "Song is not found for song id: {song_id} ".format(song_id=song_id),
         )
         return None
 
@@ -106,9 +128,12 @@ def create_song(song):
     # Can we insert this song?
     if existing_song is None:
 
+
+
         # Create a song instance using the schema and the passed in song
         schema = SongSchema()
         new_song = schema.load(song, session=db.session).data
+
 
         # Add the song to the database
         db.session.add(new_song)
@@ -193,6 +218,9 @@ def create_update_song(song):
         schema = SongSchema()
         new_song = schema.load(song, session=db.session).data
 
+        new_song.year = helper_functions.get_timestamp_year()
+        new_song.timestamp = datetime.now()
+
         # Add the song to the database
         db.session.add(new_song)
         db.session.commit()
@@ -258,4 +286,39 @@ def delete_song(target_song):
         abort(
             404,
             "Song title {song_title} is not found for artist: {artist} ".format(artist=target_song['artist'],song_title=target_song['song']),
+        )
+
+def delete_song_by_id(song_id):
+    """
+    This function deletes a song from the song structure
+    :param song:   the song object to delete
+    :return:            200 on successful delete, 404 if not found
+    """
+    # Get the song requested
+    songs = Song.query.filter(Song.song_id == song_id).all()
+
+    print("song: ", songs)
+
+    # Did we find a song?
+    if songs is not None:
+
+
+        for song in songs:
+            print("song song_id:", song.song_id)
+
+            db.session.delete(song)
+            db.session.commit()
+
+        return "The song with song id {song_id} is deleted.".format(song_id=song_id), 200
+
+        # return make_response(
+        #     "The song title {song_title} is deleted for artist: {artist}.".format(artist=target_song['artist'],song_title=target_song['song']), 200
+        # )
+
+
+    # Otherwise, nope, didn't find this song
+    else:
+        abort(
+            404,
+            "Song with song id {song_id} is not found.".format(song_id=song_id),
         )

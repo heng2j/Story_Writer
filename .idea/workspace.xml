@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/songs.py" afterPath="$PROJECT_DIR$/src/songs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/swagger.yml" afterPath="$PROJECT_DIR$/src/swagger.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="songs.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="songs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/songs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="174" column="22" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="22" />
+            <state relative-caret-position="508">
+              <caret line="311" column="83" lean-forward="false" selection-start-line="311" selection-start-column="83" selection-end-line="311" selection-end-column="83" />
               <folding>
                 <element signature="e#242#271#0" expanded="true" />
               </folding>
@@ -80,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swagger.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swagger.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/swagger.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state relative-caret-position="-618">
+              <caret line="202" column="19" lean-forward="false" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -93,10 +94,10 @@
       <file leaf-file-name="test_songs_unit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/test_songs_unit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3872">
-              <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+            <state relative-caret-position="332">
+              <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="25" />
               <folding>
-                <element signature="e#178#325#0" expanded="true" />
+                <element signature="e#178#346#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +129,8 @@
       <find>lname</find>
       <find>god</find>
       <find>person</find>
-      <find>helper_functions</find>
       <find>Easter</find>
+      <find>helper_functions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,11 +176,11 @@
         <option value="$PROJECT_DIR$/src/static/js/home.js" />
         <option value="$PROJECT_DIR$/src/rhymed.py" />
         <option value="$PROJECT_DIR$/src/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/swagger.yml" />
         <option value="$PROJECT_DIR$/src/help_functions.py" />
         <option value="$PROJECT_DIR$/src/helper_functions.py" />
-        <option value="$PROJECT_DIR$/src/songs.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_songs_unit.py" />
+        <option value="$PROJECT_DIR$/src/swagger.yml" />
+        <option value="$PROJECT_DIR$/src/songs.py" />
       </list>
     </option>
   </component>
@@ -381,12 +382,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 51m 15s.xml">
-      <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 56m 14s.xml">
-      <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 11h 59m 03s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
@@ -411,6 +406,12 @@
     <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 03m 55s.xml">
       <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 48m 47s.xml">
+      <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_test_songs_unit_py - 2018.11.19 at 12h 49m 43s.xml">
+      <configuration name="Nosetests in test_songs_unit.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -420,7 +421,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3234391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3234391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -794,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="e#259#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Enviroments/python-virtual-environments/env/lib/python3.6/site-packages/itsdangerous/timed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -820,31 +811,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/songs.py">
+    <entry file="file://$PROJECT_DIR$/src/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="174" column="22" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="22" />
+        <state relative-caret-position="370">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="13" />
           <folding>
-            <element signature="e#242#271#0" expanded="true" />
+            <element signature="e#259#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/test_songs_unit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3872">
-          <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+        <state relative-caret-position="332">
+          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="25" />
           <folding>
-            <element signature="e#178#325#0" expanded="true" />
+            <element signature="e#178#346#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swagger.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="-618">
+          <caret line="202" column="19" lean-forward="false" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/songs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="311" column="83" lean-forward="false" selection-start-line="311" selection-start-column="83" selection-end-line="311" selection-end-column="83" />
+          <folding>
+            <element signature="e#242#271#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

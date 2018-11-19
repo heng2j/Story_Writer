@@ -59,7 +59,7 @@ paths:
                   type: string
                   description:  A English words that rhymed with the given word
 
-  /songs:
+  /songs/search:
     get:
       operationId: songs.get_one_song
       tags:
@@ -83,6 +83,63 @@ paths:
           schema:
             type: object
             properties:
+              artist:
+                type: string
+                description: Artist name
+              year:
+                type: integer
+                description: Song released year
+              song:
+                type: string
+                description: Song title
+              timestamp:
+                type: string
+                description: Song creation/update timestamp
+              genre:
+                type: string
+                description: Song genre
+              lyrics:
+                type: string
+                description: Song lyrics
+
+  /songs:
+    post:
+      operationId: songs.create_update_song
+      tags:
+        - Songs
+      summary: Create a new song or update a existing song (Upsert)
+      description: This function will create a new song if it is not already exist in the song structure. If the song is exist, it will update the song instead.
+      parameters:
+        - name: song
+          in: body
+          description: Song to create
+          required: True
+          schema:
+            type: object
+            properties:
+              artist:
+                type: string
+                description: Artist name
+              year:
+                type: integer
+                description: Song released year
+              song:
+                type: string
+                description: Song title
+              genre:
+                type: string
+                description: Song genre
+              lyrics:
+                type: string
+                description: Song lyrics
+      responses:
+        201:
+          description: Successfully created or updated song
+          schema:
+            properties:
+              song_id:
+                type: integer
+                description: Id of the song
               artist:
                 type: string
                 description: Artist name
@@ -143,3 +200,54 @@ paths:
                   type: string
                   description: Song lyrics
 
+  /songs/{song_id}:
+    get:
+      operationId: songs.get_one_song_by_id
+      tags:
+        - Songs
+      summary: Get a song objects with the given song id
+      description: Get a song objects with the given song id
+      parameters:
+        - name: song_id
+          in: path
+          description: Id of the song to query
+          type: integer
+          required: True
+      responses:
+        200:
+          description: Successfully get a song objects with the given song id
+          schema:
+            type: object
+            properties:
+              artist:
+                type: string
+                description: Artist name
+              year:
+                type: integer
+                description: Song released year
+              song:
+                type: string
+                description: Song title
+              timestamp:
+                type: string
+                description: Song creation/update timestamp
+              genre:
+                type: string
+                description: Song genre
+              lyrics:
+                type: string
+                description: Song lyrics
+    delete:
+      operationId: songs.delete_song_by_id
+      tags:
+        - Songs
+      summary: Delete a song with given song object
+      parameters:
+        - name: song_id
+          in: path
+          description: Id of the song to be deleted
+          type: integer
+          required: True
+      responses:
+        200:
+          description: Successfully deleted a song

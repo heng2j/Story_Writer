@@ -9,7 +9,7 @@
 # System modules
 
 # Internal modules
-from src.songs import get_partial_match_substring ,get_top_sample_lyrics , get_one_song, create_song, delete_song , create_update_song ,update_song
+from src.songs import get_partial_match_substring ,get_top_sample_lyrics , get_one_song, create_song, delete_song , create_update_song ,update_song , get_one_song_by_id
 from src.helper_functions import get_timestamp , get_timestamp_year
 
 
@@ -79,6 +79,21 @@ def test_get_one_song():
     assert song_data['song'] == given_song_title
 
 
+def test_get_one_song_by_id():
+
+    """
+    Test gee return one song with given song id
+
+    """
+
+    given_song_id = 24851
+    given_artist = "Heng"
+    given_song_title = "I can do all things (Remix)"
+
+    song_data = get_one_song_by_id(given_song_id)
+
+    assert song_data['artist'] == given_artist
+    assert song_data['song'] == given_song_title
 
 
 
