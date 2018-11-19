@@ -15,7 +15,6 @@ rhymed collection
 # System modules
 
 # 3rd party modules
-import requests
 from flask import make_response, abort
 
 # Internal modules

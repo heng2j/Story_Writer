@@ -1,2 +1,4 @@
 data/lyrics.csv
 src/story_writer.db
+.idea
+.DS_Store

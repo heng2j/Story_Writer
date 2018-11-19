@@ -3,7 +3,7 @@
 # ---------------
 # Author: Zhongheng Li
 # Start Date: 11-18-18
-# Last Modified Date: 11-18-18
+# Last Modified Date: 11-19-18
 
 
 """
@@ -18,14 +18,13 @@ https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics
 
 
 # System modules
-import os
-import re
-import csv
-import pandas as pd
-from config import db
 
 # 3rd party modules
-from models import Word
+import pandas as pd
+
+# Internal modules
+from config import db
+
 
 def parse_data_set(data_set_path):
 

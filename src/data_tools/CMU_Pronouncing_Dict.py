@@ -15,9 +15,7 @@ on the CMU Pronouncing Dictionary data set
 
 
 # System modules
-import os
-import re
-from config import db
+
 
 # Internal modules
 from src.rhymed import extract_rhyme_phoneme
