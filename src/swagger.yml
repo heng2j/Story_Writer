@@ -34,3 +34,28 @@ paths:
               synonym:
                 type: string
 
+  /rhymed/{given_word}:
+    get:
+      operationId: rhymed.get_rhymed_list
+      tags:
+        - Rhymed
+      summary: Get a list of English words that rhymed with the given word
+      description: Get a list of English words that rhymed with the given word
+      parameters:
+        - name: given_word
+          in: path
+          description:  A single English word
+          type: string
+          required: True
+      responses:
+        200:
+          description: Successfully get a list of English words that rhymed with the given word
+          schema:
+            type: array
+            items:
+              properties:
+                word:
+                  type: string
+
+
+

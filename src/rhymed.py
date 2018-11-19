@@ -20,7 +20,8 @@ from flask import make_response, abort
 
 # Internal modules
 from models import Word , WordSchema
-from sqlalchemy import and_
+from sqlalchemy import and_ , distinct
+from config import db
 
 
 def extract_rhyme_phoneme(pronunciation):
@@ -71,7 +72,7 @@ def get_pronunciations(given_word):
 
 
 
-def get_rhymed_list(given_word):
+def get_rhymed_list(given_word, limits=100):
     """
 
     :param given_word:
@@ -84,8 +85,9 @@ def get_rhymed_list(given_word):
 
     print("rhyme_phoneme_list: ", rhyme_phoneme_list)
 
-    # Get the word requested
-    words = Word.query.filter(and_(Word.phoneme.in_(rhyme_phoneme_list) ,Word.word!=given_word )).all()
+    # Get the word requested with limit 100 by default
+    words = db.session.query(Word.word).filter(and_(Word.phoneme.in_(rhyme_phoneme_list) ,Word.word!=given_word )).distinct().limit(limits).all()
+
 
     # Did we find a the word?
     if len(words) != 0:
@@ -96,7 +98,7 @@ def get_rhymed_list(given_word):
 
         print("word_data: ", word_data)
 
-        return [data['word'] for data in word_data]
+        return word_data
 
     # Otherwise, nope, didn't find that word
     else:

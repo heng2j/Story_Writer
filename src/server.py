@@ -31,8 +31,8 @@ def create_app(config_filename=None):
 
 
 if __name__ == "__main__":
-    app = create_app()
-    app.run(debug=True)
+    connex_app = create_app()
+    connex_app.run(debug=True)
 
 
     # Create a URL route in our application for "/"

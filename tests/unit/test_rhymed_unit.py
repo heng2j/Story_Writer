@@ -61,4 +61,4 @@ def test_get_rhymed_list():
     rhymed_words_list = get_rhymed_list(given_word)
 
     assert len(rhymed_words_list) > 0
-    assert should_included in rhymed_words_list
+    assert should_included in  [data['word'] for data in rhymed_words_list]
