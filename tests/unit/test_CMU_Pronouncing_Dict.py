@@ -11,26 +11,17 @@ import os
 from os.path import dirname as up
 
 # 3rd party modules
-import pytest
-from werkzeug.exceptions import HTTPException
-import requests
-from flask import make_response, abort
 
 # Testing modules
-from src.data_tools.CMU_Pronouncing_Dict import extract_rhyme_phoneme , parse_data_set
-
-
+from src.data_tools.CMU_Pronouncing_Dict import parse_data_set
 
 projectPath = os.getcwd()
 
 
-
 def test_pronunciations_list():
-
     """
     Test if the function can return a pronunciations list
     """
-
 
     data_set_path = up(up(projectPath)) + "/data/cmudict-0.7b"
 
@@ -38,8 +29,6 @@ def test_pronunciations_list():
 
     pronunciations_list = parse_data_set(data_set_path)
 
-    assert  isinstance(pronunciations_list,list)
+    assert isinstance(pronunciations_list, list)
 
     assert len(pronunciations_list) == 134371
-
-

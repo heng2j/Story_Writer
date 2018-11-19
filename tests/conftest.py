@@ -10,12 +10,9 @@
 
 # 3rd party modules
 import pytest
-from werkzeug.exceptions import HTTPException
 
 # Testing modules
 import src.server as server
-import src.synonym as synonym
-
 
 
 @pytest.fixture(scope='module')
@@ -27,7 +24,6 @@ def test_client():
 
     :return:
     """
-
 
     flask_app = server.create_app('flask_test.cfg')
 

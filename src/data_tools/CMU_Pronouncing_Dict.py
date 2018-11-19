@@ -13,15 +13,11 @@ on the CMU Pronouncing Dictionary data set
 
 """
 
-
 # System modules
 
 
 # Internal modules
 from src.rhymed import extract_rhyme_phoneme
-
-
-
 
 
 def parse_data_set(data_set_path):
@@ -44,7 +40,7 @@ def parse_data_set(data_set_path):
     pronunciations_list = []
 
     # For parsing the cmudict-0.7b file, we has to use encoding "ISO-8859-1" to avoid UnicodeDecodeError
-    with open(data_set_path, encoding = "ISO-8859-1") as dataFile:
+    with open(data_set_path, encoding="ISO-8859-1") as dataFile:
         for row in dataFile:
             row = row.strip()
             if not row.startswith(';'):
@@ -55,9 +51,4 @@ def parse_data_set(data_set_path):
 
                 pronunciations_list.append((word, pronunciation, phoneme))
 
-
     return pronunciations_list
-
-
-
-

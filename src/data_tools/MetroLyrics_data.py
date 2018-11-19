@@ -16,7 +16,6 @@ https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics
 
 """
 
-
 # System modules
 
 # 3rd party modules
@@ -27,11 +26,14 @@ from config import db
 
 
 def parse_data_set(data_set_path):
+    """
+    This is used to parse the Metro Lyrics data set with Pandas
+    and save the data into our SQLite database
 
+    :param data_set_path: the path to the dataset
+    :return:
+    """
 
     data_df = pd.read_csv(data_set_path)
 
     data_df.to_sql(name='songs', con=db.get_engine(), if_exists='append', index=False)
-
-
-

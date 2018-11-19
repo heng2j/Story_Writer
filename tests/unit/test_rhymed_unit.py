@@ -11,7 +11,7 @@
 # 3rd party modules
 
 # Internal modules
-from src.rhymed import get_rhymed_list , get_pronunciations, extract_rhyme_phoneme
+from src.rhymed import get_pronunciations, extract_rhyme_phoneme
 
 
 
@@ -42,18 +42,3 @@ def test_get_pronunciation():
     assert  target_pronunciation in pronunciation_list
 
 
-def test_get_rhymed_list():
-
-    """
-    Test if get_rhymed_list can return a list of words that rhymed with the given word
-
-    """
-
-    given_word = 'love'
-
-    should_included = 'above'
-
-    rhymed_words_list = get_rhymed_list(given_word)
-
-    assert len(rhymed_words_list) > 0
-    assert should_included in  [data['word'] for data in rhymed_words_list]
