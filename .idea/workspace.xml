@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/test_rhymed_functional.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/test_songs_functional.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" afterPath="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_tools/MetroLyrics_data.py" afterPath="$PROJECT_DIR$/src/data_tools/MetroLyrics_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rhymed.py" afterPath="$PROJECT_DIR$/src/rhymed.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/songs.py" afterPath="$PROJECT_DIR$/src/songs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/css/home.css" afterPath="$PROJECT_DIR$/src/static/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home.html" afterPath="$PROJECT_DIR$/src/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/conftest.py" afterPath="$PROJECT_DIR$/tests/conftest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/integration/test_synonym_functional.py" afterPath="$PROJECT_DIR$/tests/integration/test_synonym_functional.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" afterPath="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_songs_unit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_synonym_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_synonym_unit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="synonym.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="synonym.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/synonym.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="710">
               <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,7 +89,6 @@
         <option value="$PROJECT_DIR$/src/song.py" />
         <option value="$PROJECT_DIR$/src/build_database.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/models.py" />
         <option value="$PROJECT_DIR$/src/server.py" />
         <option value="$PROJECT_DIR$/src/static/css/medium.css" />
@@ -118,6 +114,7 @@
         <option value="$PROJECT_DIR$/tests/integration/test_rhymed_functional.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_songs_unit.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -326,8 +323,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -506,14 +504,6 @@
           <folding>
             <element signature="e#232#241#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,6 +761,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

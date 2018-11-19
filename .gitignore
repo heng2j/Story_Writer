@@ -1,4 +1,6 @@
 data/lyrics.csv
+notebook/.ipynb_checkpoints
 src/story_writer.db
+*_pycache__
 .idea
 .DS_Store
