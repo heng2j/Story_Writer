@@ -15,25 +15,13 @@ on the CMU Pronouncing Dictionary data set
 
 
 # System modules
-
+import os
+import re
+from config import db
 
 # 3rd party modules
+from models import Word
 
-
-def extract_rhyme_phoneme(pronunciation):
-    """
-
-    :param pronunciation: a string representation of the pronunciation
-    :return: a string of rhyme phoneme extract from the pronunciation string
-    """
-
-    phoneme_list = pronunciation.split()
-
-    for i in range(len(phoneme_list) - 1, 0 , -1):
-        if phoneme_list[i][-1] in '12':
-            return " ".join(phoneme_list[i:])
-
-    return None
 
 
 def parse_data_set(data_set_path):
@@ -55,24 +43,42 @@ def parse_data_set(data_set_path):
 
     pronunciations_list = []
 
-    with open(data_set_path) as dataFile:
+    # For parsing the cmudict-0.7b file, we has to use encoding "ISO-8859-1" to avoid UnicodeDecodeError
+    with open(data_set_path, encoding = "ISO-8859-1") as dataFile:
+        for row in dataFile:
+            row = row.strip()
+            if not row.startswith(';'):
+                word, pronunciation = row.split("  ")
+                word = word.rstrip("(0123)").lower()
 
-        line = dataFile.readline()
-        line = line.strip()
-        if not line.startswith(';'):
+                phoneme = extract_rhyme_phoneme(pronunciation)
 
-            word , pronunciation = line.split("  ")
-            word = word.rstrip("(0123)").lower()
+                pronunciations_list.append((word, pronunciation, phoneme))
 
-            phoneme = extract_rhyme_phoneme(pronunciation)
-
-            pronunciations_list.append((word,pronunciation,phoneme))
 
     return pronunciations_list
 
 
-    # def save_data_to_databae(pronunciations_list):
-    #
-    #
-    #
-    #     return None
+def save_data_to_database(pronunciations_list):
+    """
+
+    :param pronunciations_list:
+    :return:
+    """
+
+    # Delete database file if it exists currently
+    if os.path.exists("word.db"):
+        os.remove("word.db")
+
+    # Create the database
+    db.create_all()
+
+    # iterate over the PEOPLE structure and populate the database
+    for word in pronunciations_list:
+        p = Word(word=word[0], pronunciation=word[1], phoneme=word[2])
+        db.session.add(p)
+
+    db.session.commit()
+
+
+

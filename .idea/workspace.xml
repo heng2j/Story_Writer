@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_tools/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rhymed.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/build_database.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" afterPath="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rhymed.py" afterPath="$PROJECT_DIR$/src/rhymed.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.py" afterPath="$PROJECT_DIR$/src/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" afterPath="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" afterPath="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,25 +21,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="synonym.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/synonym.py">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="436">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#249#262#0" expanded="true" />
+                <element signature="e#60#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_synonym_unit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/test_synonym_unit.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="352">
+              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
-                <element signature="e#181#194#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,40 +48,20 @@
       <file leaf-file-name="rhymed.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rhymed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="89">
+              <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
               <folding>
-                <element signature="e#247#260#0" expanded="true" />
+                <element signature="e#266#281#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMU_Pronouncing_Dict.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_CMU_Pronouncing_Dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
-              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_rhymed_unit.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_rhymed_unit.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/unit/test_rhymed_unit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="734">
+              <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
               <folding>
                 <element signature="e#180#193#0" expanded="true" />
               </folding>
@@ -86,35 +69,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmudict-0.7b" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/cmudict-0.7b">
+      <file leaf-file-name="swagger.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swagger.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12603">
-              <caret line="86" column="2" lean-forward="true" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+            <state relative-caret-position="308">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_synonym_functional.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/integration/test_synonym_functional.py">
+      <file leaf-file-name="CMU_Pronouncing_Dict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="26" column="66" lean-forward="false" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+            <state relative-caret-position="133">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="e#166#181#0" expanded="true" />
+                <element signature="e#292#301#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/conftest.py">
+      <file leaf-file-name="build_database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/build_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="322">
+              <caret line="51" column="74" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="74" />
               <folding>
-                <element signature="e#172#185#0" expanded="true" />
+                <element signature="e#232#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="synonym.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/synonym.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1086">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#249#262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="e#259#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_CMU_Pronouncing_Dict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#173#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,17 +171,20 @@
         <option value="$PROJECT_DIR$/src/people.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_synonym.py" />
         <option value="$PROJECT_DIR$/tests/integration/test_synonym.py" />
-        <option value="$PROJECT_DIR$/src/server.py" />
         <option value="$PROJECT_DIR$/src/swagger.yml" />
         <option value="$PROJECT_DIR$/tests/.pytest_cache/.gitignore" />
         <option value="$PROJECT_DIR$/src/synonym.py" />
         <option value="$PROJECT_DIR$/tests/conftest.py" />
         <option value="$PROJECT_DIR$/tests/integration/test_synonym_functional.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_synonym_unit.py" />
-        <option value="$PROJECT_DIR$/src/rhymed.py" />
-        <option value="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
+        <option value="$PROJECT_DIR$/src/models.py" />
+        <option value="$PROJECT_DIR$/src/config.py" />
+        <option value="$PROJECT_DIR$/src/server.py" />
+        <option value="$PROJECT_DIR$/src/build_database.py" />
         <option value="$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py" />
         <option value="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
+        <option value="$PROJECT_DIR$/tests/unit/test_rhymed_unit.py" />
+        <option value="$PROJECT_DIR$/src/rhymed.py" />
       </list>
     </option>
   </component>
@@ -255,7 +277,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py">
+  <component name="RunManager" selected="Python tests.Nosetests in test_rhymed_unit.py">
+    <configuration name="CMU_Pronouncing_Dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data_tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Story_Writer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,19 +310,19 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Nosetests in test_synonym_functional.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration name="Nosetests in test_rhymed_unit.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/integration" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Story_Writer" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/integration/test_synonym_functional.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_rhymed_unit.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Nosetests in test_synonym_unit.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
@@ -301,7 +340,7 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_synonym_unit.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="synonym" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="build_database" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -313,42 +352,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Story_Writer" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/synonym.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test_synonym" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Story_Writer" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/unit/test_synonym_unit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/build_database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.synonym" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_unit.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_synonym" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_functional.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_unit.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CMU_Pronouncing_Dict" />
+      <item index="3" class="java.lang.String" itemvalue="Python.build_database" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_unit.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_functional.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_synonym" />
-        <item index="4" class="java.lang.String" itemvalue="Python.synonym" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_rhymed_unit.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in test_CMU_Pronouncing_Dict.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python.build_database" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CMU_Pronouncing_Dict" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in test_synonym_unit.py" />
       </list>
     </recent_temporary>
   </component>
@@ -366,35 +388,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 27m 47s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 21m 14s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 29m 17s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 27m 41s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 36m 42s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 28m 32s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 37m 09s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 29m 10s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 37m 25s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 30m 44s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 46m 29s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 31m 22s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 46m 41s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 37m 01s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 47m 21s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 40m 35s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 48m 10s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 41m 01s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_CMU_Pronouncing_Dict_py - 2018.11.18 at 14h 48m 45s.xml">
-      <configuration name="Nosetests in test_CMU_Pronouncing_Dict.py" configurationId="tests" />
+    <history-entry file="Nosetests_in_test_rhymed_unit_py - 2018.11.18 at 19h 53m 18s.xml">
+      <configuration name="Nosetests in test_rhymed_unit.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -527,26 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swagger.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4498">
           <caret line="209" column="20" lean-forward="false" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -567,22 +573,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#60#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding>
-            <element signature="e#172#185#0" expanded="true" />
+            <element signature="e#172#185#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,17 +588,7 @@
         <state relative-caret-position="256">
           <caret line="26" column="66" lean-forward="false" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
           <folding>
-            <element signature="e#166#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/synonym.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#249#262#0" expanded="true" />
+            <element signature="e#166#181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,26 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/test_rhymed_unit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#180#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/test_synonym_unit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
-          <folding>
-            <element signature="e#181#194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data_tools/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -643,29 +609,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rhymed.py">
+    <entry file="file://$PROJECT_DIR$/tests/unit/test_synonym_unit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="880">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
           <folding>
-            <element signature="e#247#260#0" expanded="true" />
+            <element signature="e#181#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#60#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/word.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/synonym.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1086">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#249#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#259#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swagger.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/build_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="51" column="74" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="74" />
+          <folding>
+            <element signature="e#232#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#292#301#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/test_CMU_Pronouncing_Dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#173#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_tools/CMU_Pronouncing_Dict.py">
+    <entry file="file://$PROJECT_DIR$/src/rhymed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="89">
+          <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+          <folding>
+            <element signature="e#266#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/test_rhymed_unit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <element signature="e#180#193#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,16 +7,26 @@ from flask import render_template
 import connexion
 
 
+# local modules
+import config
+
 def create_app(config_filename=None):
 
-    # create the application instance
-    app = connexion.App(__name__, specification_dir="./")
 
-    # Cead the swagger.yml file to configure the endpoints
-    app.add_api("swagger.yml")
+    # Get the application instance
+    connex_app = config.connex_app
+
+    # Read the swagger.yml file to configure the endpoints
+    connex_app.add_api("swagger.yml")
+
+    # # create the application instance
+    # app = connexion.App(__name__, specification_dir="./")
+    #
+    # # Cead the swagger.yml file to configure the endpoints
+    # app.add_api("swagger.yml")
 
 
-    return app
+    return connex_app
 
 
 
@@ -26,7 +36,7 @@ if __name__ == "__main__":
 
 
     # Create a URL route in our application for "/"
-    @app.route("/")
+    @connex_app.route("/")
     def home():
         """
         This function just responds to the browser URL

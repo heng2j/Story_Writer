@@ -24,28 +24,22 @@ from src.data_tools.CMU_Pronouncing_Dict import extract_rhyme_phoneme , parse_da
 projectPath = os.getcwd()
 
 
-def test_extract_rhyme_phoneme():
-
-    """
-    Test if the function can return a the correct phoneme as expected
-    """
-    target_phoneme = "AH1 V"
-    pronunciation = "L AH1 V"
-
-    phoneme = extract_rhyme_phoneme(pronunciation)
-
-    assert  phoneme == target_phoneme
-
 
 def test_pronunciations_list():
 
     """
     Test if the function can return a pronunciations list
     """
-    print("projectPath: ", up(up(projectPath)))
 
-    data_set_path = "/data/cmudict-0.7b"
 
-    pronunciations_list = parse_data_set(up(up(projectPath)) + data_set_path)
+    data_set_path = up(up(projectPath)) + "/data/cmudict-0.7b"
+
+    print("data_set_path: ", data_set_path)
+
+    pronunciations_list = parse_data_set(data_set_path)
 
     assert  isinstance(pronunciations_list,list)
+
+    assert len(pronunciations_list) == 134371
+
+
