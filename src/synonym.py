@@ -55,7 +55,14 @@ def get_one_random(input_phase):
     :return: A random choice from the synonyms that returned from get_synonyms_from_datamuse
     """
 
+
     word_list = input_phase.split('+')
+
+    if (len(word_list) < 2):
+
+        abort(
+            404, "Please give a phase that contain more than 1 words"
+        )
 
     synonyms = get_synonyms_from_datamuse(word_list, max_num=20)
 
