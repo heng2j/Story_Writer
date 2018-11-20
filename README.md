@@ -2,7 +2,7 @@
 
 # Story Writer (Coming soon...)
 -----------------
-Story Writer is a web widget that create a space with the right tools for creative writers, urban poets and rhymed artists to compose their art pieces.  
+Story Writer is a rich text editor as a web widget that create a space with the right tools for creative writers, urban poets and rhymed artists to compose their art pieces.  
 
 
 # Table of Contents
