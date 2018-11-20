@@ -18,6 +18,7 @@ from datetime import datetime
 # 3rd party modules
 from flask import make_response, abort
 from sqlalchemy import and_, update
+from  sqlalchemy.sql.expression import func
 
 # Internal modules
 from models import Song, SongSchema
@@ -106,7 +107,7 @@ def get_top_sample_lyrics(given_word, limits=10):
     """
 
     # Get the songs requested
-    songs = Song.query.filter(Song.lyrics.like(f'%{given_word}%')).limit(limits).all()
+    songs = Song.query.filter(and_(Song.lyrics.like(f'%{given_word}%'),Song.lyrics != None)).order_by(func.random()).limit(limits).all()
 
     # Did we find a the songs?
     if songs is not None:

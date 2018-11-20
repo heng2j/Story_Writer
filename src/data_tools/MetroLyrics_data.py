@@ -47,8 +47,6 @@ def parse_data_set(data_set_path):
     # Build the Sqlite ULR for SqlAlchemy
     sqlite_url = "sqlite:////" + os.path.join(basedir, "story_writer.db")
 
-    print("sqlite_url: ", sqlite_url)
-
     engine = create_engine(sqlite_url, echo=False)
 
     data_df.to_sql(name='songs', con=engine, if_exists='append', index=False)
