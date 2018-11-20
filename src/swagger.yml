@@ -161,22 +161,22 @@ paths:
 
 
 
-  /songs/{given_word}:
+  /songs/{given_phase}:
     get:
       operationId: songs.get_top_sample_lyrics
       tags:
         - Songs
-      summary: Get a list of song objects which lyrics contained the given word
-      description: Get a list of song objects which lyrics contained the given word
+      summary: Get a list of song objects which lyrics contained the given phase
+      description: Get a list of song objects which lyrics contained given phase
       parameters:
-        - name: given_word
+        - name: given_phase
           in: path
-          description:  A single English word
+          description:  A given phase contains one or more words
           type: string
           required: True
       responses:
         200:
-          description: Successfully get a list of song objects which lyrics contained the given word
+          description: Successfully get a list of song objects which lyrics contained the given phase
           schema:
             type: array
             items:

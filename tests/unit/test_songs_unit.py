@@ -19,7 +19,7 @@ def test_partial_match_substring():
 
     """
 
-    given_word = "god"
+    given_phase = "know what"
 
     sample_lyrics = """
 
@@ -40,9 +40,13 @@ def test_partial_match_substring():
 
     """
 
-    partial_matched_lyrics = get_partial_match_substring(sample_lyrics.lower(), given_word)
+    partial_matched_lyrics = get_partial_match_substring(sample_lyrics.lower(), given_phase)
 
-    assert partial_matched_lyrics == "nd ill throw minez up homie, till i retire, only god knows when(knows when :]) im mr. mo'endz, if you"
+    print('partial_matched_lyrics: ', partial_matched_lyrics)
+
+
+
+    assert  given_phase in partial_matched_lyrics
 
 
 def test_get_top_sample_lyrics():
@@ -51,13 +55,13 @@ def test_get_top_sample_lyrics():
 
     """
 
-    given_word = "peace"
+    given_word = "peace out"
 
     song_data = get_top_sample_lyrics(given_word)
 
     assert len(song_data) == 10
 
-    print(song_data)
+    # print(song_data)
 
 
 def test_get_one_song():

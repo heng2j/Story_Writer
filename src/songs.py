@@ -82,32 +82,62 @@ def get_one_song_by_id(song_id):
         return None
 
 
-def get_partial_match_substring(lyrics_str, given_word):
+def get_partial_match_substring(lyrics_str, given_phase):
 
     """
+    This function extract the partial substring from the lyrics that matched the given phase
 
     :param lyrics_str:
-    :param given_word:
+    :param given_phase:
     :return:
     """
 
-    word_list = lyrics_str.split()
+    reformated_lyrics_str = ' '.join([word.strip() for word in lyrics_str.split()])
 
-    for i in range(len(word_list) - 1, 0, -1):
-        if given_word in word_list[i]:
-            return " ".join(word_list[i - 10: i + 10])
+    starting_index = reformated_lyrics_str.find(given_phase) - 200
+    ending_index = starting_index + len(given_phase) + 200
 
+    if starting_index < 0:
+        starting_index  = 0
+    elif ending_index > len(reformated_lyrics_str):
+        ending_index = len(reformated_lyrics_str) - 1
 
-def get_top_sample_lyrics(given_word, limits=10):
+    partially_match_substring = "..." + reformated_lyrics_str[ starting_index : ending_index] + "..."
+
+    #TODO - May need to enhance the code to extract full words instead of characters
+    """
+    The following code was used in the previous version to return results in full words 
+    
+    # word_list = lyrics_str.split()
+    #
+    # for i in range(len(word_list) - 1, 0, -1):
+    #     if given_phase in word_list[i]:
+    #         return " ".join(word_list[i - 10: i + 10])
     """
 
-    :param given_word:
+    return partially_match_substring.replace('\n', ' ')
+
+
+
+
+def get_top_sample_lyrics(given_phase, limits=10):
+    """
+    This function get songs which lyrics contains the given phase. Currently will return the top 10 matched songs.
+
+    :param given_phase:
     :param limits:
     :return:
     """
 
+    word_list = given_phase.split('+')
+
+    given_phase_str = " ".join([word for word in word_list]).lower().strip()
+
+    print('given_phase_str: ', given_phase_str)
+
+
     # Get the songs requested
-    songs = Song.query.filter(and_(Song.lyrics.like(f'%{given_word}%'),Song.lyrics != None)).order_by(func.random()).limit(limits).all()
+    songs = Song.query.filter(and_(Song.lyrics.like(f'%{given_phase_str}%'),Song.lyrics != None)).order_by(func.random()).limit(limits).all()
 
     # Did we find a the songs?
     if songs is not None:
@@ -117,7 +147,7 @@ def get_top_sample_lyrics(given_word, limits=10):
         song_data = song_schema.dump(songs).data
 
         for data in song_data:
-            data['lyrics'] = get_partial_match_substring(data['lyrics'], given_word)
+            data['lyrics'] = get_partial_match_substring(data['lyrics'].lower(), given_phase_str)
 
         return song_data
 
@@ -125,7 +155,7 @@ def get_top_sample_lyrics(given_word, limits=10):
     else:
         abort(
             404,
-            "Songs not found for given word: {given_word}".format(given_word=given_word),
+            "Songs not found for given word: {given_word}".format(given_word=given_phase_str),
         )
 
 
