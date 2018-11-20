@@ -29,12 +29,15 @@ def build_database_for_CMU_Pronouncing_Dict(cmu_file_path):
 
     pronunciations_list = CMU_data_tools.parse_data_set(data_set_path)
 
-    # iterate over the pronunciations_list and populate the database
-    for word in pronunciations_list:
-        p = Word(word=word[0], pronunciation=word[1], phoneme=word[2])
-        db.session.add(p)
+    CMU_data_tools.save_data_to_database_with_pandas(pronunciations_list)
 
-    db.session.commit()
+
+    # # iterate over the pronunciations_list and populate the database
+    # for word in pronunciations_list:
+    #     p = Word(word=word[0], pronunciation=word[1], phoneme=word[2])
+    #     db.session.add(p)
+    #
+    # db.session.commit()
 
 
 def build_database_for_Lyrics(lyrics_file_path):

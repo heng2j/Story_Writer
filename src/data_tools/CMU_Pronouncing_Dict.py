@@ -14,10 +14,20 @@ on the CMU Pronouncing Dictionary data set
 """
 
 # System modules
+import os
+from os.path import dirname as up
 
 
 # Internal modules
 from rhymed import extract_rhyme_phoneme
+
+# 3rd party modules
+import pandas as pd
+from sqlalchemy import create_engine
+
+
+
+basedir = up(os.path.abspath(os.path.dirname(__file__)))
 
 
 def parse_data_set(data_set_path):
@@ -52,3 +62,19 @@ def parse_data_set(data_set_path):
                 pronunciations_list.append((word, pronunciation, phoneme))
 
     return pronunciations_list
+
+
+def save_data_to_database_with_pandas(data_in_list):
+
+    columns = ['word','pronunciation','phoneme']
+    data_df = pd.DataFrame.from_records(data_in_list, columns=columns)
+
+    # Build the Sqlite ULR for SqlAlchemy
+    sqlite_url = "sqlite:////" + os.path.join(basedir, "story_writer.db")
+
+    print("sqlite_url: ", sqlite_url)
+
+    engine = create_engine(sqlite_url, echo=False)
+
+    data_df.to_sql(name='words', con=engine, if_exists='append', index=False)
+

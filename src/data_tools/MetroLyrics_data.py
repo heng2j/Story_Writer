@@ -22,11 +22,12 @@ from os.path import dirname as up
 
 # 3rd party modules
 import pandas as pd
+from sqlalchemy import create_engine
 
 # Internal modules
-from config import db
 
-from sqlalchemy import create_engine
+
+
 
 
 basedir = up(os.path.abspath(os.path.dirname(__file__)))

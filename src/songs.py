@@ -27,6 +27,13 @@ import helper_functions
 
 
 def get_one_song(artist, song_title):
+    """
+
+    :param artist:
+    :param song_title:
+    :return:
+    """
+
     # Get the song requested
     song = Song.query.filter(and_(Song.artist == artist, Song.song == song_title)).one_or_none()
 
@@ -48,6 +55,12 @@ def get_one_song(artist, song_title):
 
 
 def get_one_song_by_id(song_id):
+    """
+
+    :param song_id:
+    :return:
+    """
+
     # Get the song requested
     song = Song.query.filter(Song.song_id == song_id).one_or_none()
 
@@ -69,6 +82,14 @@ def get_one_song_by_id(song_id):
 
 
 def get_partial_match_substring(lyrics_str, given_word):
+
+    """
+
+    :param lyrics_str:
+    :param given_word:
+    :return:
+    """
+
     word_list = lyrics_str.split()
 
     for i in range(len(word_list) - 1, 0, -1):
@@ -77,6 +98,13 @@ def get_partial_match_substring(lyrics_str, given_word):
 
 
 def get_top_sample_lyrics(given_word, limits=10):
+    """
+
+    :param given_word:
+    :param limits:
+    :return:
+    """
+
     # Get the songs requested
     songs = Song.query.filter(Song.lyrics.like(f'%{given_word}%')).limit(limits).all()
 
