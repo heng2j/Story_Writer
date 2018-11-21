@@ -25,7 +25,7 @@ Story Writer is a rich text editor as a web widget that create a space with the 
 
   
  ### "Whom said the same thing as well?" 
-  - Have you ever wondering if your line is fresh enough? What if someone had already used it, can you figure it out without leaving your workspace? Here Story Writer can tell you right away. Currently, our database contained 24850 hip-hop songs by 1107 artists from 1982 to 2015. And the data are coming from the [380000 lyrics from Metrolyrics](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics) dataset from Kaggle. So when you highlighted and query certain words on the rich editor, you can get a list of songs that have lyrics contained the phase you are having in mind. Currently, we only support single word searching, and limited to 100 referenced songs for each query. The list of songs are randomly selected. More option will be provided in the future release. 
+  - Have you ever wondering if your line is fresh enough? What if someone had already used it, can you figure it out without leaving your workspace? Here Story Writer can tell you right away. Currently, our database contained 24850 hip-hop songs by 1107 artists from 1982 to 2015. And the data are coming from the [380000 lyrics from Metrolyrics](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics) dataset from Kaggle. So when you highlighted and query certain words on the rich editor, you can get a list of songs that have lyrics contained the phase you are having in mind. The list of songs are randomly selected. More option will be provided in the future release. 
 
   - Here is a brief [Exploratory Data Analysis on MetroLyrics Data Set](https://github.com/heng2j/Story_Writer/blob/master/notebook/Exploratory%20Data%20Analysis%20on%20MetroLyrics%20Data%20Set.ipynb) 
 
@@ -78,9 +78,9 @@ Story Writer is a rich text editor as a web widget that create a space with the 
        
        http://0.0.0.0:5000/api/rhymed/peace
        
-  - Get a list of songs ojbect with partially matched lyrics that contained the word "peace" 
+  - Get a list of songs ojbect with partially matched lyrics that contained the phase "I can do all things" 
        
-        http://0.0.0.0:5000/api/songs/peace
+        http://0.0.0.0:5000/api/songs/I+can+do+all+things
          
   - Get the song object of the song 'best-i-ever-had-remix' by Drake
        
