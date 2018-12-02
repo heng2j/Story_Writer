@@ -8,12 +8,11 @@
 
 # System modules
 import os
-from os.path import dirname as up
-
-# 3rd party modules
 
 # Testing modules
 from data_tools.CMU_Pronouncing_Dict import parse_data_set
+
+# 3rd party modules
 
 projectPath = os.getcwd()
 
@@ -23,7 +22,7 @@ def test_pronunciations_list():
     Test if the function can return a pronunciations list
     """
 
-    data_set_path = up(up(projectPath)) + "/data/cmudict-0.7b"
+    data_set_path = projectPath + "/data/cmudict-0.7b"
 
     print("data_set_path: ", data_set_path)
 

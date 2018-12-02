@@ -83,7 +83,7 @@ def get_rhymed_list(given_word, limits=100):
 
     rhyme_phoneme_list = [rhyme_phoneme for rhyme_phoneme in map(extract_rhyme_phoneme, pronunciation_list)]
 
-    print("rhyme_phoneme_list: ", rhyme_phoneme_list)
+    # print("rhyme_phoneme_list: ", rhyme_phoneme_list)
 
     # Get the word requested with limit 100 by default
     words = db.session.query(Word.word).filter(
@@ -96,7 +96,7 @@ def get_rhymed_list(given_word, limits=100):
         word_schema = WordSchema(many=True)
         word_data = word_schema.dump(words).data
 
-        print("word_data: ", word_data)
+        # print("word_data: ", word_data)
 
         return word_data
 

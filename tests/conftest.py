@@ -3,7 +3,7 @@
 # ---------------
 # Author: Zhongheng Li
 # Start Date: 11-17-18
-# Last Modified Date: 11-18-18
+# Last Modified Date: 12-2-18
 
 
 # System modules
@@ -11,7 +11,7 @@
 # 3rd party modules
 import pytest
 
-# Testing modules
+# Internal modules
 import src.server as server
 
 

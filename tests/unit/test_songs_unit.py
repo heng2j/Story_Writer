@@ -9,7 +9,7 @@
 # System modules
 
 # Internal modules
-from songs import get_partial_match_substring, get_top_sample_lyrics, get_one_song
+from src.songs import get_partial_match_substring, get_top_sample_lyrics, get_one_song
 
 
 def test_partial_match_substring():

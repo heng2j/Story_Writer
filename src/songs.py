@@ -24,7 +24,7 @@ from  sqlalchemy.sql.expression import func
 from models import Song, SongSchema
 from config import db
 
-import helper_functions
+import helper_functions as helper_functions
 
 
 def get_one_song(artist, song_title):
