@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/story-writer/public/home.css" afterPath="$PROJECT_DIR$/webapp/story-writer/public/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js" afterPath="$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/story-writer/src/components/editorStyles.css" afterPath="$PROJECT_DIR$/webapp/story-writer/src/components/editorStyles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +48,8 @@
       <file leaf-file-name="Draft_inline_editor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="249" column="21" lean-forward="false" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
+            <state relative-caret-position="283">
+              <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -148,9 +145,9 @@
       <find>onHighlight</find>
       <find>editorStyles</find>
       <find>query</find>
-      <find>rhymed_words</find>
       <find>list</find>
       <find>Menu</find>
+      <find>rhymed_words</find>
     </findStrings>
     <replaceStrings>
       <replace>RandomSynonymButton</replace>
@@ -838,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="249" column="21" lean-forward="false" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
+        <state relative-caret-position="283">
+          <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
           <folding />
         </state>
       </provider>

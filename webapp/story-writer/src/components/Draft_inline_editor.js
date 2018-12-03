@@ -4,6 +4,7 @@ import Editor, { createEditorStateWithText } from 'draft-js-plugins-editor';
 import { EditorState, SelectionState, RichUtils } from "draft-js";
 import createInlineToolbarPlugin, { Separator } from 'draft-js-inline-toolbar-plugin';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
+import axios from 'axios';
 
 
 
@@ -99,27 +100,56 @@ const Arrow = ({ text, className }) => {
 const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
 const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
 
-
-
-
-
-let synonym = ""
-
 class RandomSynonymPicker extends Component {
 
-  async componentDidMount() {
+
+  state = {
+    selected: 0,
+    isLoading: false,
+    error: null,
+    synonym: ""
+  };
+
+//  async componentDidMount() {
+//
+//    let query = selected_content.replace(" ", "+").toLowerCase();
+//
+//    const url = "http://0.0.0.0:5000/api/synonym/" + query;
+//    const response = await fetch(url);
+//    const data = await response.json();
+//    console.log("synonym: ", data.synonym)
+//
+//    synonym = data.synonym
+//
+//    setTimeout(() => { window.addEventListener('click', this.onWindowClick); });
+//  }
+
+
+    componentDidMount() {
+
+    this.setState({ isLoading: true });
 
     let query = selected_content.replace(" ", "+").toLowerCase();
 
-    const url = "http://0.0.0.0:5000/api/synonym/" + query;
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log("synonym: ", data.synonym)
 
-    synonym = data.synonym
+    const api_url =  "http://0.0.0.0:5000/api/synonym/" + query;
+
+      fetch(api_url)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+         else {
+          throw new Error('Synonym not found.');
+        }
+      })
+      .then(data => this.setState({ synonym: data.synonym, isLoading: false }))
+      .catch(error => this.setState({ error, isLoading: false, synonym: error.message  }));
 
     setTimeout(() => { window.addEventListener('click', this.onWindowClick); });
+
   }
+
 
 
 
@@ -135,6 +165,8 @@ class RandomSynonymPicker extends Component {
   render() {
 
     console.log("selected_content:", selected_content)
+
+    const { selected,synonym } = this.state;
 
     var divStyle = {
       color: 'black',
@@ -178,35 +210,38 @@ class RandomSynonymButton extends Component {
 
 
 
-let rhymed_words = []
-
 
 class RhymedWordsPicker extends Component {
 
   state = {
-    selected: 0
+    selected: 0,
+    isLoading: false,
+    error: null,
+    rhymed_words: []
   };
 
-  async componentDidMount() {
+  componentDidMount() {
 
-    let query = selected_content.toLowerCase();;
+    this.setState({ isLoading: true });
 
-    const url = "http://0.0.0.0:5000/api/rhymed/" + query;
-    const response = await fetch(url);
-    rhymed_words = await response.json();
-
-//    console.log("data: ", data)
-//
-//    data.forEach(function(word) {
-//
-//    rhymed_words.push(word.word)
-//
-//    });
+    let query = selected_content.toLowerCase();
 
 
-    console.log("Rhymed Words: ", rhymed_words)
+    const api_url = "http://0.0.0.0:5000/api/rhymed/" + query;
+
+      fetch(api_url)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Rhymed word not found.');
+        }
+      })
+      .then(data => this.setState({ rhymed_words: data, isLoading: false }))
+      .catch(error => this.setState({ error, isLoading: false, rhymed_words: [{'word': error.message}]  }));
 
     setTimeout(() => { window.addEventListener('click', this.onWindowClick); });
+
   }
 
 
@@ -230,18 +265,14 @@ class RhymedWordsPicker extends Component {
 
     };
 
-    var rhymed_words_list = rhymed_words.map(function(word){
-                        return <li>{word}</li>;
-                      })
 
-
-
-    const { selected } = this.state;
+    const { selected, isLoading, error,rhymed_words  } = this.state;
     // Create menu from items
     const menu = Menu(rhymed_words, selected);
 
 
-
+    console.log("Rhymed Words: ", rhymed_words)
+    console.log("Error: ", error)
 
     return (
 
