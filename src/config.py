@@ -6,7 +6,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-print("basedir: ", basedir )
 
 # Create the connexion application instance
 connex_app = connexion.App(__name__, specification_dir=basedir)

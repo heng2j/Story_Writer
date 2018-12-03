@@ -1,0 +1,118 @@
+/*
+ * This is the CSS stylesheet for the demo people application
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("/images/background_image.jpg");
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+
+}
+
+.banner {
+    text-align: center;
+}
+
+.editor {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.people {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, caption, th, td {
+    border: 1px solid lightgrey;
+}
+
+table caption {
+    height: 33px;
+    font-weight: bold;
+    padding-top: 5px;
+    border-bottom: none;
+}
+
+tr {
+    height: 33px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0
+}
+
+td {
+    text-align: center;
+}
+
+.error {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: #fbb;
+    visibility: hidden;
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Demo_flask_app_test.py
+# test_flask_app_api.py
 # ---------------
 # Author: Zhongheng Li
 # Start Date: 12-1-18
@@ -42,6 +42,7 @@ class MyTestCase(unittest.TestCase):
         assert 'The requested URL was not found on the server' in response.json['detail']
 
     def test_rhymed(self):
+
         given_word = 'peace'
 
         rhymed_words_list = get_rhymed_list(given_word)
