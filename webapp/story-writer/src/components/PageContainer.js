@@ -67,6 +67,10 @@ class PageContainer extends React.Component {
 		);
 	};
 
+	onHighlight = () => {
+   this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'HIGHLIGHT'))
+    };
+
 
 
 	render() {
@@ -79,6 +83,9 @@ class PageContainer extends React.Component {
 				<button onClick={this.onItalicClick}>
 					<em>I</em>
 				</button>
+				<button className="highlight" onClick={this.onHighlight}>
+                  <span style={{ background: "yellow" }}>H</span>
+                </button>
 				<div className="editors">
 					<Editor
 						editorState={this.state.editorState}
