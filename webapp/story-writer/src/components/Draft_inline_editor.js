@@ -23,6 +23,85 @@ import {
 
 
 import '../../node_modules/draft-js-inline-toolbar-plugin/lib/plugin.css';
+import './editorStyles.css';
+import editorStyles from './editorStyles.css';
+
+
+
+
+
+
+
+
+// list of items
+const list = [
+    {
+        "word": "apiece"
+    },
+    {
+        "word": "aris"
+    },
+    {
+        "word": "audris"
+    },
+    {
+        "word": "bbc's"
+    },
+    {
+        "word": "bernice"
+    },
+    {
+        "word": "breece"
+    },
+    {
+        "word": "brocious"
+    },
+    {
+        "word": "buice"
+    }];
+
+
+// One item component
+// selected prop will be passed
+const MenuItem = ({ text, selected }) => {
+  return (
+    <div
+      className="menu-item"
+    >
+      {text}
+    </div>
+  );
+};
+
+// All items component
+// Important! add unique key
+export const Menu = (list) => list.map(el => {
+  const { word } = el;
+
+  return (
+    <MenuItem
+      text={word}
+      key={word}
+    />
+  );
+});
+
+
+const Arrow = ({ text, className }) => {
+  return (
+    <div
+      className={className}
+    >{text}</div>
+  );
+};
+
+
+const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
+const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+
+
+
+
 
 let synonym = ""
 
@@ -30,7 +109,7 @@ class RandomSynonymPicker extends Component {
 
   async componentDidMount() {
 
-    let query = selected_content.replace(" ", "+");
+    let query = selected_content.replace(" ", "+").toLowerCase();
 
     const url = "http://0.0.0.0:5000/api/synonym/" + query;
     const response = await fetch(url);
@@ -104,21 +183,25 @@ let rhymed_words = []
 
 class RhymedWordsPicker extends Component {
 
+  state = {
+    selected: 0
+  };
+
   async componentDidMount() {
 
     let query = selected_content.toLowerCase();;
 
     const url = "http://0.0.0.0:5000/api/rhymed/" + query;
     const response = await fetch(url);
-    const data = await response.json();
+    rhymed_words = await response.json();
 
-    console.log("data: ", data)
-
-    data.forEach(function(word) {
-
-    rhymed_words.push(word.word)
-
-    });
+//    console.log("data: ", data)
+//
+//    data.forEach(function(word) {
+//
+//    rhymed_words.push(word.word)
+//
+//    });
 
 
     console.log("Rhymed Words: ", rhymed_words)
@@ -143,6 +226,7 @@ class RhymedWordsPicker extends Component {
 
     var divStyle = {
       color: 'black',
+      width: '600px',
 
     };
 
@@ -151,13 +235,26 @@ class RhymedWordsPicker extends Component {
                       })
 
 
+
+    const { selected } = this.state;
+    // Create menu from items
+    const menu = Menu(rhymed_words, selected);
+
+
+
+
     return (
 
-      <div style={divStyle}>
+         <div className="App" style={divStyle}>
+          <ScrollMenu
+          data={menu}
+          selected={selected}
+          onSelect={this.onSelect}
+          wheel={true}
+          transition={15}
+        />
+         </div>
 
-        <ul>{ rhymed_words_list }</ul>
-
-      </div>
     );
   }
 }
@@ -176,8 +273,8 @@ class RhymedWordsButton extends Component {
 
   render() {
     return (
-      <div onMouseDown={this.onMouseDown} >
-        <button onClick={this.onClick}>
+      <div onMouseDown={this.onMouseDown} className={editorStyles.headlineButtonWrapper} >
+        <button onClick={this.onClick}  className={editorStyles.headlineButton}>
           Rhymed Words
         </button>
       </div>
@@ -205,7 +302,7 @@ let selected_content = "";
 export default class CustomInlineToolbarEditor extends Component {
 
   state = {
-    editorState: EditorState.createEmpty(),
+    editorState:  createEditorStateWithText(text),
     loading: true
   };
 
@@ -250,8 +347,15 @@ export default class CustomInlineToolbarEditor extends Component {
 
 
 
+
     return (
-      <div onClick={this.focus}>
+
+
+
+
+      <div className={editorStyles.editor} onClick={this.focus}>
+
+
         <Editor
           editorState={this.state.editorState}
           onChange={this.onChange}
