@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d92a5bb-f92b-4735-ae69-51d5d33240d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js" afterPath="$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/story-writer/public/index.html" afterPath="$PROJECT_DIR$/webapp/story-writer/public/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Draft_inline_editor.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Draft_inline_editor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+            <state relative-caret-position="63">
+              <caret line="131" column="53" lean-forward="false" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -85,24 +86,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/App.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="295">
+              <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#noscript#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/index.html">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#noscript#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,12 +206,12 @@
         <option value="$PROJECT_DIR$/webapp/story-writer/src/components/PageContainer.js" />
         <option value="$PROJECT_DIR$/src/server.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
-        <option value="$PROJECT_DIR$/webapp/story-writer/public/index.html" />
-        <option value="$PROJECT_DIR$/webapp/story-writer/src/App.js" />
         <option value="$PROJECT_DIR$/webapp/story-writer/public/home.js" />
         <option value="$PROJECT_DIR$/webapp/story-writer/public/home.css" />
         <option value="$PROJECT_DIR$/webapp/story-writer/src/components/editorStyles.css" />
         <option value="$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js" />
+        <option value="$PROJECT_DIR$/webapp/story-writer/src/App.js" />
+        <option value="$PROJECT_DIR$/webapp/story-writer/public/index.html" />
       </list>
     </option>
   </component>
@@ -767,24 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#noscript#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/components/PageContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -809,14 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
@@ -835,9 +810,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/components/Draft_inline_editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+        <state relative-caret-position="63">
+          <caret line="131" column="53" lean-forward="false" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/story-writer/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/story-writer/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#noscript#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
