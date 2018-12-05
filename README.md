@@ -58,11 +58,11 @@ Story Writer is a rich text editor as a web widget that create a space with the 
  
  
 ### All functions for the API endpoints were developed and tested in the Test Driven Development (TDD) manner
-  All tests under the tests folder had been tested successfully in PyCharm
+  All tests under the tests folder had been tested successfully in PyCharm and also with pytest.
   
-    /tests 
+    # Assumed you are at the project level
+    pytest -v 
     
-   ** I am still new to pytest to fully automate the test process, if the tests can't be run on the command line, please try on Pycharm
 
 ### All API endpoints were also tested Postman
 
